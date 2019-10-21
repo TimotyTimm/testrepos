@@ -23,7 +23,7 @@ Function Get-Weather {
         Write-Host "City = Minsk"}
     If ([string]::IsNullOrWhiteSpace($Day))  {
         $Day=Get-Date -Format "yyyy/MM/dd"
-        Write-Host "Day  =" (Get-Date -Format "yyyy/MM/dd")}  
+        Write-Host "Day  =" $Day}  
     
     $errmsg = "The name of city or date are incorrect. Please enter the valid name of the city and check that the date is in following format DD/MM/YYYY or YYYY/MM/DD"
                          
